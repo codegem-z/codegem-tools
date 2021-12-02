@@ -1,4 +1,4 @@
-import { printName } from './decorators.js';
+import { printLevel } from './decorators.js';
 
 export default class Log {
   private ctx;
@@ -6,12 +6,13 @@ export default class Log {
     this.ctx = ctx;
   }
 
-  info(...data: any) {
+  @printLevel('info')
+  info(...data: any[]) {
     console.info(...data);
   }
 
-  @printName('debug')
-  debug(...data: any) {
+  @printLevel('debug')
+  debug(...data: any[]) {
     if (this.ctx.debug) {
       console.log(...data);
     }

@@ -1,4 +1,4 @@
-export function printName(name: string) {
+export function printLevel(level: 'info' | 'debug' | 'warn' | 'error') {
   return (
     _target: any,
     _propertyKey: string,
@@ -7,9 +7,7 @@ export function printName(name: string) {
     const original = descriptor.value;
 
     descriptor.value = function (...args: any[]) {
-      console.log(`[${name}]:`);
-      const result = original.call(this, ...args);
-      console.log('result: ', result);
+      const result = original.call(this, `[${level}]:`, ...args);
       return result;
     };
   };
