@@ -11,6 +11,21 @@ export default class Log {
     console.info(...data);
   }
 
+  @printLevel('warn')
+  warn(...data: any[]) {
+    console.info(...data);
+  }
+
+  @printLevel('error')
+  error(...data: any[]) {
+    console.info(...data);
+  }
+
+  @printLevel('success')
+  success(...data: any[]) {
+    console.info(...data);
+  }
+
   @printLevel('debug')
   debug(...data: any[]) {
     if (this.ctx.debug) {
