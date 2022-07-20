@@ -22,7 +22,7 @@ const levelEmojiMatch = match({
   warn: emojis.forbidden,
   error: emojis.failed,
   info: emojis.common,
-  debug: emojis.common,
+  debug: emojis.debug,
   success: emojis.giftFlower,
 });
 
