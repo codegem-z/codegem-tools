@@ -32,7 +32,7 @@
     "eslint": "^7.32.0",
     "jest": "^27.2.3",
     "pre-commit": "^1.2.2",
-    "renew-it": "1.4.10-alpha.1",
+    "renew-it": "1.5.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "tsm": "^2.2.1",
