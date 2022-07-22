@@ -10,7 +10,7 @@
   ],
   "type": "module",
   "scripts": {
-    "dev": "tsm src/mod.ts",
+    "dev": "tsm src/__dev.ts",
     "build": "rimraf build && tsc",
     "jest": "yarn build && jest --coverage",
     "tslint": "tsc --noEmit --pretty"
